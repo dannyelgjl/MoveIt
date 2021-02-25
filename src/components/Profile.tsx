@@ -1,10 +1,15 @@
+import styles from '../styles/components/Profile.module.css';
+
 const Profile = () => {
   return (
-    <div>
+    <div className={styles.profileContainer}>
       <img src="https://github.com/dannyelgjl.png" alt="Daniel Jerônimo" />
       <div>
         <strong>Daniel Gomes</strong>
-        <p>Level 1</p>
+        <p>
+          <img src="icons/level.svg" alt="Level" />
+          Level 1
+        </p>
       </div>
     </div>
   )
