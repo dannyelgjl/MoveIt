@@ -6,6 +6,7 @@ const ExperienceBar = () => {
       <span>0 px</span>
       <div>
         <div style={{ width: '50%' }} />
+
         <span
           className={styles.currentExperience}
           style={{ left: '50%' }}>
