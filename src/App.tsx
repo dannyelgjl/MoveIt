@@ -1,3 +1,5 @@
+import './styles/global.css';
+
 const App = () => {
   return (
     <h1>teste</h1>
