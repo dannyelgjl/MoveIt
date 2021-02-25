@@ -1,4 +1,4 @@
-import styles from '../style/components/ExperienceBar.module.css';
+import styles from '../styles/components/ExperienceBar.module.css';
 
 const ExperienceBar = () => {
   return (
@@ -6,7 +6,6 @@ const ExperienceBar = () => {
       <span>0 px</span>
       <div>
         <div style={{ width: '50%' }} />
-
         <span
           className={styles.currentExperience}
           style={{ left: '50%' }}>
