@@ -1,8 +1,14 @@
+//Styles
+import './style.css';
 import './styles/global.css';
+//Components
+import ExperiencerBar from './components/ExperienceBar';
 
 const App = () => {
   return (
-    <h1>teste</h1>
+    <div className="container">
+      <ExperiencerBar />
+    </div>
   );
 };
 
