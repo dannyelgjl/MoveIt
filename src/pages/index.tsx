@@ -19,7 +19,7 @@ interface HomeProps {
   challengesCompleted: number,
 }
 
-const Home = (props) => {
+const Home = (props: HomeProps) => {
   console.log(props);
   return (
     <ChallengesProvider
