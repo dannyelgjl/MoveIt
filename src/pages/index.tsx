@@ -6,8 +6,11 @@ import CountDown from '../components/CountDown';
 import ExperienceBar from '../components/ExperienceBar';
 import Profile from '../components/Profile';
 import ChallengeBox from '../components/ChallengeBox';
+//Context
+import { CountdownProvider } from '../context/CountdownContext';
 // style
 import styles from '../styles/pages/Home.module.css';
+
 
 
 const Home = () => {
@@ -19,16 +22,18 @@ const Home = () => {
 
       <ExperienceBar />
 
-      <section>
-        <div>
-          <Profile />
-          <CompletedChallenges />
-          <CountDown />
-        </div>
-        <div>
-          <ChallengeBox />
-        </div>
-      </section>
+      <CountdownProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompletedChallenges />
+            <CountDown />
+          </div>
+          <div>
+            <ChallengeBox />
+          </div>
+        </section>
+      </CountdownProvider>
     </div>
   );
 };
